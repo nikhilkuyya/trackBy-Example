@@ -1,0 +1,23 @@
+._ {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid hotpink;
+  width: 300px;
+  height: 250px;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid #3498db;
+  width: 35px;
+  height: 35px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.selected {
+  background-color: #3498db;
+}

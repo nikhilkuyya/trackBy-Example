@@ -1,0 +1,15 @@
+<div class="_">
+  <div *ngFor="let row of items; let y = index; trackBy: trackRow">
+    <div
+      class="box"
+      class="row-{{ x }} col-{{ y }}"
+      *ngFor="let box of row; let x = index; trackBy: trackBox.bind(null, y)"
+      #el
+      (click)="onClick(y, x, el)"
+    >
+      {{ box }}
+    </div>
+  </div>
+</div>
+
+Selected: {{ selected | json }}
